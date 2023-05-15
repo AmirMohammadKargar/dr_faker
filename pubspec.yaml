@@ -1,7 +1,7 @@
 name: fl_faker
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+repository: https://github.com/AmirMohammadKargar/fl_faker
 
 environment:
   sdk: '>=2.18.6 <3.0.0'
