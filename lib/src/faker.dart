@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:fl_faker/src/data/address/address.locale_accessor.dart';
 import 'package:fl_faker/src/data/animals/animals.locale_accessor.dart';
 import 'package:fl_faker/src/data/colors/colors.locale_accessor.dart';
 import 'package:fl_faker/src/data/email/email.dart';
@@ -82,5 +83,9 @@ class FlFaker {
         sentencesPerParagraph: sentencesPerParagraph,
         wordsPerSentence: wordsPerSentence,
         customWords: customWords);
+  }
+
+  String address() {
+    return addressLocaleAccessor(locale);
   }
 }

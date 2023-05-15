@@ -93,6 +93,13 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _address() {
+    var fake = FlFaker(locale: _locale);
+    setState(() {
+      _value = fake.address();
+    });
+  }
+
   void _changeLocalFa() {
     setState(() {
       _locale = CustomLocale.fa;
@@ -154,6 +161,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               onPressed: _lorem,
               child: const Text('Lorem'),
+            ),
+            ElevatedButton(
+              onPressed: _address,
+              child: const Text('Address'),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
