@@ -1,0 +1,4 @@
+enum CustomLocale {
+  en,
+  fa;
+}
